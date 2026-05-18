@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sifututor Scroll Animation</title>
+    <title>Sifututor | Tuisyen Berkualiti</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- AOS Library for Scroll Animations -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        body { overflow-x: hidden; }
+        body { overflow-x: hidden; scroll-behavior: smooth; }
+        .gradient-text { background: linear-gradient(90deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
 <body class="bg-slate-950 text-white font-sans">
@@ -16,40 +16,77 @@
     <!-- Hero Section -->
     <section class="h-screen flex flex-col justify-center items-center text-center px-4">
         <h1 class="text-6xl md:text-8xl font-black mb-6" data-aos="fade-up" data-aos-duration="1000">
-            Sifututor: <span class="text-blue-500">Kecemerlangan</span>
+            Sifututor: <span class="gradient-text">Kecemerlangan</span>
         </h1>
         <p class="text-xl md:text-2xl text-slate-400 mb-10 max-w-2xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-            Scroll ke bawah untuk melihat kelebihan kami.
+            Membentuk masa depan pelajar dengan kaedah pembelajaran yang lebih bijak, interaktif, dan berkesan.
         </p>
+        <a href="#pricing" class="bg-blue-600 hover:bg-blue-700 transition-all px-10 py-4 rounded-full text-lg font-bold" data-aos="fade-up" data-aos-delay="600">Lihat Pakej</a>
     </section>
 
-    <!-- Features Section (Scroll Triggered) -->
-    <section class="py-24 px-4 bg-slate-900">
+    <!-- Features -->
+    <section class="py-24 px-4">
         <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-            <!-- Feature 1 -->
-            <div class="p-8 bg-slate-800 rounded-2xl" data-aos="fade-up" data-aos-duration="800">
+            <div class="p-8 bg-slate-900 border border-slate-800 rounded-2xl hover:border-blue-500 transition-all" data-aos="fade-up">
                 <h3 class="text-2xl font-bold mb-4 text-blue-400">Cikgu Pakar</h3>
-                <p class="text-slate-300">Belajar daripada pendidik yang berpengalaman luas dalam silibus terkini.</p>
+                <p class="text-slate-300">Pendidik berpengalaman dalam silibus terkini.</p>
             </div>
-            <!-- Feature 2 -->
-            <div class="p-8 bg-slate-800 rounded-2xl" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <div class="p-8 bg-slate-900 border border-slate-800 rounded-2xl hover:border-blue-500 transition-all" data-aos="fade-up" data-aos-delay="200">
                 <h3 class="text-2xl font-bold mb-4 text-blue-400">Nota Digital</h3>
-                <p class="text-slate-300">Akses nota visual yang menarik dan mudah difahami di mana-mana sahaja.</p>
+                <p class="text-slate-300">Akses nota visual yang menarik di mana-mana.</p>
             </div>
-            <!-- Feature 3 -->
-            <div class="p-8 bg-slate-800 rounded-2xl" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+            <div class="p-8 bg-slate-900 border border-slate-800 rounded-2xl hover:border-blue-500 transition-all" data-aos="fade-up" data-aos-delay="400">
                 <h3 class="text-2xl font-bold mb-4 text-blue-400">Kelas Interaktif</h3>
-                <p class="text-slate-300">Sesi soal jawab secara langsung yang menyeronokkan dan berkesan.</p>
+                <p class="text-slate-300">Sesi soal jawab secara langsung yang efektif.</p>
             </div>
         </div>
     </section>
 
-    <!-- AOS JS -->
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24 px-4 bg-slate-900">
+        <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Pilihan Pakej</h2>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+            <!-- Basic -->
+            <div class="p-8 bg-slate-950 rounded-2xl border border-slate-800" data-aos="zoom-in">
+                <h3 class="text-xl font-bold mb-2">Basic</h3>
+                <p class="text-4xl font-black mb-6">RM50<span class="text-lg font-normal text-slate-500">/bln</span></p>
+                <ul class="space-y-4 mb-8 text-slate-400">
+                    <li>✓ Akses Nota</li>
+                    <li>✓ Video Rakaman</li>
+                </ul>
+                <button class="w-full py-3 rounded-lg border border-slate-600 hover:bg-slate-800">Daftar</button>
+            </div>
+            <!-- Pro -->
+            <div class="p-8 bg-blue-600 rounded-2xl transform md:-translate-y-4 shadow-xl shadow-blue-900/20" data-aos="zoom-in" data-aos-delay="200">
+                <h3 class="text-xl font-bold mb-2">Standard</h3>
+                <p class="text-4xl font-black mb-6">RM100<span class="text-lg font-normal text-blue-200">/bln</span></p>
+                <ul class="space-y-4 mb-8 text-blue-100">
+                    <li>✓ Semua Basic</li>
+                    <li>✓ Kelas Live Mingguan</li>
+                    <li>✓ Kuiz Interaktif</li>
+                </ul>
+                <button class="w-full py-3 rounded-lg bg-white text-blue-600 font-bold">Daftar</button>
+            </div>
+            <!-- Premium -->
+            <div class="p-8 bg-slate-950 rounded-2xl border border-slate-800" data-aos="zoom-in" data-aos-delay="400">
+                <h3 class="text-xl font-bold mb-2">Premium</h3>
+                <p class="text-4xl font-black mb-6">RM150<span class="text-lg font-normal text-slate-500">/bln</span></p>
+                <ul class="space-y-4 mb-8 text-slate-400">
+                    <li>✓ Semua Standard</li>
+                    <li>✓ Tutor Personal</li>
+                    <li>✓ Laporan Prestasi</li>
+                </ul>
+                <button class="w-full py-3 rounded-lg border border-slate-600 hover:bg-slate-800">Daftar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 text-center text-slate-500">
+        <p>&copy; 2026 Sifututor. Hak Cipta Terpelihara.</p>
+    </footer>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            once: true // Animasi hanya berlaku sekali apabila discroll
-        });
-    </script>
+    <script>AOS.init({once: true});</script>
 </body>
 </html>
