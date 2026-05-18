@@ -18,8 +18,12 @@
 <body class="bg-slate-950 text-white font-sans">
 
     <!-- Hero Section -->
-    <section class="h-screen flex flex-col justify-center items-center text-center px-4">
-        <div class="w-[90%] mx-auto">
+    <section class="relative h-screen flex flex-col justify-center items-center text-center px-4 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Education background" class="w-full h-full object-cover opacity-20">
+            <div class="absolute inset-0 bg-slate-950/80"></div>
+        </div>
+        <div class="w-[90%] mx-auto relative z-10">
             <h1 class="text-4xl md:text-8xl font-black mb-6 break-words" data-aos="fade-up" data-aos-duration="1000">
                 Sifututor: <span class="gradient-text">Kecemerlangan</span>
             </h1>
@@ -30,18 +34,21 @@
         </div>
     </section>
 
-    <!-- Features -->
-    <section class="py-24 px-4">
+    <!-- Features with Icons -->
+    <section class="py-24 px-4 bg-slate-950">
         <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-            <div class="p-8 bg-slate-900 border border-slate-800 rounded-2xl hover:border-blue-500 transition-all" data-aos="fade-up">
+            <div class="p-8 bg-slate-900 border border-slate-800 rounded-2xl hover:border-blue-500 transition-all group" data-aos="fade-up">
+                <img src="https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Expert" class="w-full h-48 object-cover rounded-lg mb-6 group-hover:scale-105 transition-transform">
                 <h3 class="text-2xl font-bold mb-4 text-blue-400">Cikgu Pakar</h3>
                 <p class="text-slate-300">Pendidik berpengalaman dalam silibus terkini.</p>
             </div>
-            <div class="p-8 bg-slate-900 border border-slate-800 rounded-2xl hover:border-blue-500 transition-all" data-aos="fade-up" data-aos-delay="200">
+            <div class="p-8 bg-slate-900 border border-slate-800 rounded-2xl hover:border-blue-500 transition-all group" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://images.pexels.com/photos/5905710/pexels-photo-5905710.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Notes" class="w-full h-48 object-cover rounded-lg mb-6 group-hover:scale-105 transition-transform">
                 <h3 class="text-2xl font-bold mb-4 text-blue-400">Nota Digital</h3>
                 <p class="text-slate-300">Akses nota visual yang menarik di mana-mana.</p>
             </div>
-            <div class="p-8 bg-slate-900 border border-slate-800 rounded-2xl hover:border-blue-500 transition-all" data-aos="fade-up" data-aos-delay="400">
+            <div class="p-8 bg-slate-900 border border-slate-800 rounded-2xl hover:border-blue-500 transition-all group" data-aos="fade-up" data-aos-delay="400">
+                <img src="https://images.pexels.com/photos/4143791/pexels-photo-4143791.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Class" class="w-full h-48 object-cover rounded-lg mb-6 group-hover:scale-105 transition-transform">
                 <h3 class="text-2xl font-bold mb-4 text-blue-400">Kelas Interaktif</h3>
                 <p class="text-slate-300">Sesi soal jawab secara langsung yang efektif.</p>
             </div>
