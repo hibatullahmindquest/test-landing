@@ -3,79 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sifututor | Kecemerlangan Digital</title>
+    <title>Sifututor — Digital Learning Lab</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        :root { --apple-blue: #0071e3; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #f5f5f7; color: #1d1d1f; }
-        .apple-blue { color: var(--apple-blue); }
-        .btn-apple { background-color: var(--apple-blue); border-radius: 980px; padding: 12px 28px; color: white; transition: 0.3s; }
-        .btn-apple:hover { background-color: #0077ed; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body>
+<body class="bg-white text-black antialiased max-w-2xl mx-auto px-6 py-12 md:py-24">
+
+    <!-- Header -->
+    <header class="mb-16">
+        <a href="/" class="font-bold text-xl tracking-tighter hover:text-blue-600 transition-colors">ST.</a>
+    </header>
 
     <!-- Hero -->
-    <section class="bg-black text-white py-32 px-4 text-center">
-        <div class="max-w-[980px] mx-auto">
-            <h1 class="text-5xl md:text-7xl font-semibold mb-6 tracking-tight">Sifututor.</h1>
-            <p class="text-2xl text-slate-400 mb-10">Kecemerlangan pembelajaran bermula di sini.</p>
-            <a href="#pricing" class="btn-apple text-lg">Lihat Pakej</a>
+    <main>
+        <div class="mb-20">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tighter mb-6">Sifututor.</h1>
+            <p class="text-xl text-neutral-600 leading-relaxed max-w-md">
+                Kaedah pembelajaran yang membina potensi, bukan sekadar menghafal. Kami membimbing pelajar untuk belajar dengan cara yang paling berkesan.
+            </p>
         </div>
-    </section>
 
-    <!-- Features -->
-    <section class="py-24 px-4 max-w-[980px] mx-auto">
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-3xl" data-aos="fade-up">
-                <img src="https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg" class="rounded-2xl mb-6">
-                <h3 class="text-2xl font-semibold mb-2">Cikgu Pakar</h3>
-                <p class="text-slate-500">Pendidik berpengalaman dalam silibus terkini.</p>
+        <!-- Featured Section -->
+        <section class="mb-20">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-8">Pakej & Perkhidmatan</h2>
+            <div class="space-y-6">
+                <a href="#" class="block p-6 border border-neutral-200 rounded-xl hover:border-black transition-all">
+                    <h3 class="font-semibold text-lg">Pakej Basic</h3>
+                    <p class="text-neutral-600">RM50/bln • Akses nota & rakaman.</p>
+                </a>
+                <a href="#" class="block p-6 border border-black bg-black text-white rounded-xl transition-all">
+                    <h3 class="font-semibold text-lg">Pakej Standard (Recommended)</h3>
+                    <p class="text-neutral-300">RM100/bln • Kelas live, kuiz & akses penuh.</p>
+                </a>
+                <a href="#" class="block p-6 border border-neutral-200 rounded-xl hover:border-black transition-all">
+                    <h3 class="font-semibold text-lg">Pakej Premium</h3>
+                    <p class="text-neutral-600">RM150/bln • Tutor personal & laporan prestasi.</p>
+                </a>
             </div>
-            <div class="bg-white p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="200">
-                <img src="https://images.pexels.com/photos/5905710/pexels-photo-5905710.jpeg" class="rounded-2xl mb-6">
-                <h3 class="text-2xl font-semibold mb-2">Nota Digital</h3>
-                <p class="text-slate-500">Akses nota visual yang menarik di mana-mana.</p>
-            </div>
-            <div class="bg-white p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="400">
-                <img src="https://images.pexels.com/photos/4143791/pexels-photo-4143791.jpeg" class="rounded-2xl mb-6">
-                <h3 class="text-2xl font-semibold mb-2">Kelas Interaktif</h3>
-                <p class="text-slate-500">Sesi soal jawab secara langsung yang efektif.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Pricing -->
-    <section id="pricing" class="py-24 px-4 bg-white">
-        <div class="max-w-[980px] mx-auto text-center">
-            <h2 class="text-4xl font-semibold mb-16">Pilihan Pakej</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="border rounded-3xl p-8">
-                    <h3 class="font-bold text-xl">Basic</h3>
-                    <p class="text-4xl font-bold my-6">RM50</p>
-                    <button class="btn-apple w-full">Daftar</button>
+        <!-- Social Proof/Media -->
+        <section class="mb-20">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-8">Apa Kata Pelajar</h2>
+            <div class="space-y-8">
+                <div class="border-l-2 border-black pl-6">
+                    <p class="italic text-lg mb-2">"Sifututor ubah cara saya faham subjek yang paling saya benci."</p>
+                    <span class="text-sm text-neutral-500">— Ali, SPM</span>
                 </div>
-                <div class="bg-black text-white rounded-3xl p-8">
-                    <h3 class="font-bold text-xl">Standard</h3>
-                    <p class="text-4xl font-bold my-6">RM100</p>
-                    <button class="btn-apple w-full">Daftar</button>
-                </div>
-                <div class="border rounded-3xl p-8">
-                    <h3 class="font-bold text-xl">Premium</h3>
-                    <p class="text-4xl font-bold my-6">RM150</p>
-                    <button class="btn-apple w-full">Daftar</button>
+                <div class="border-l-2 border-neutral-200 pl-6">
+                    <p class="italic text-lg mb-2">"Sangat teratur dan mudah untuk rujuk semula nota."</p>
+                    <span class="text-sm text-neutral-500">— Sarah, PT3</span>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Links -->
+        <section>
+            <h2 class="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-8">Hubungi Kami</h2>
+            <ul class="space-y-4">
+                <li><a href="#" class="text-blue-600 hover:underline">WhatsApp Admin →</a></li>
+                <li><a href="#" class="text-blue-600 hover:underline">Portal Pelajar (Login) →</a></li>
+                <li><a href="#" class="text-blue-600 hover:underline">Jadual Kelas →</a></li>
+            </ul>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="py-12 text-center text-slate-500 text-sm">
-        <p>&copy; 2026 Sifututor. All rights reserved.</p>
+    <footer class="mt-24 text-sm text-neutral-400">
+        &copy; 2026 Sifututor.
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({once: true});</script>
 </body>
 </html>
